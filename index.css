@@ -627,7 +627,7 @@ main {
 }
 
 #projects {
-    padding: 8% 6%;
+    padding: 8% 6% 0;
 }
 
 .projects-title {
@@ -749,7 +749,7 @@ main {
 }
 .timeline {
     max-width:700px;
-    margin: 100px auto;
+    margin: 0px auto;
     
     position: relative;
     border-left: 2px solid rgba(194, 122, 255, 0.15);
@@ -758,7 +758,7 @@ main {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     background: rgba(18, 12, 35, 0.7);
     border: 1px solid rgba(189, 124, 250, 0.2);
     border-radius: 16px;
@@ -828,7 +828,7 @@ main {
 }
 
 #contacts {
-    padding: 8% 6%;
+    padding: 4% 6%;
 }
 
 .contacts-title {
