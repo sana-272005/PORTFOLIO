@@ -134,8 +134,8 @@ main {
 
 #home {
     width: 100%;
-    padding: 10% 5% 8%;
     display: flex;
+    padding:5% 6% 0;
     gap: 15%;
 }
 
@@ -387,7 +387,7 @@ main {
 
 
 #about {
-    padding: 10% 6% 8%;
+    padding: 8% 6% 0;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -489,7 +489,7 @@ main {
 }
 
 #skills {
-    padding: 10% 6% 8%;
+    padding: 8% 6% 5%;
     font-family: "Saira", sans-serif;
 }
 
@@ -627,13 +627,13 @@ main {
 }
 
 #projects {
-    padding: 10% 6% 200px;
+    padding: 8% 6%;
 }
 
 .projects-title {
     font-size: 48px;
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom:50px;
     text-shadow: 5px 3px 3px rgba(194, 122, 255, 0.4);
 }
 
@@ -738,7 +738,7 @@ main {
 }
 
 #journey {
-    padding: 10% 6% 100px;
+    padding: 8% 6% 0;
 }
 
 .journey-title {
@@ -747,12 +747,12 @@ main {
     margin-bottom: 60px;
     text-shadow: 5px 3px 3px rgba(194, 122, 255, 0.4);
 }
-
 .timeline {
     max-width:700px;
-    margin: 0 auto;
+    margin: 100px auto;
+    
     position: relative;
-    border-left: 1px solid rgba(194, 122, 255, 0.2);
+    border-left: 2px solid rgba(194, 122, 255, 0.15);
     padding-left: 40px;
 }
 
@@ -764,9 +764,8 @@ main {
     border-radius: 16px;
     padding: 24px;
 }
-
 .timeline-item::before {
-    content: '';
+       content: '';
     position: absolute;
     left: -48px;
     top: 28px;
@@ -777,6 +776,26 @@ main {
     box-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc;
 }
 
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #c084fc;
+    box-shadow: 0 0 8px #c084fc;
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: lineDown linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 100%;
+}
+
+@keyframes lineDown {
+    0% { transform: scaleY(0); }
+    100% { transform: scaleY(1); }
+}
 .timeline-item h3 {
     color: #fff;
     font-size: 17px;
@@ -809,7 +828,7 @@ main {
 }
 
 #contacts {
-    padding: 10% 6% 100px;
+    padding: 8% 6%;
 }
 
 .contacts-title {
@@ -940,7 +959,7 @@ main {
 /* ===== MEDIA QUERY ===== */
 
 
-@media (min-width: 992px) and (max-width: 1399.99px) {
+@media (min-width: 992px) and (max-width: 1199.99px) {
     header {
         width: 90%;
         padding: 12px 24px;
@@ -960,7 +979,7 @@ main {
     }
 
     #home {
-        padding: 12% 3% 8%;
+        padding: 5% 6% 0%;
     }
 
     #home h1 {
@@ -975,7 +994,12 @@ main {
     .home_left>p {
         white-space: nowrap;
     }
-
+.letter{
+    width:200px;
+    height:200px;
+    margin-top:15%;
+    margin-left:18%;
+ }
     .about_title,
     .skills-title,
     .projects-title,
@@ -1019,10 +1043,13 @@ main {
         padding: 6px 12px;
         font-size: 14px;
     }
+    main{
+        margin-top:18%;
+    }
 
     #home {
         gap: 5%;
-        padding: 12% 3% 8%;
+        padding: 8% 3% 0%;
     }
 
     #home h1 {
@@ -1077,7 +1104,7 @@ main {
 
 @media (min-width: 576px) and (max-width: 767.99px) {
     header {
-        width: 90%;
+        width: 96%;
         padding: 12px 18px;
         height: 100px;
         flex-direction: column;
@@ -1104,7 +1131,7 @@ main {
     #home {
         flex-direction: column;
         gap: 30px;
-        padding: 15% 2% 8%;
+        padding: 8% 5% 0%;
        
     }
 
@@ -1122,7 +1149,7 @@ main {
 
     #about {
         flex-direction: column;
-        padding: 12% 5%;
+        padding: 8% 5% 0;
     }
 
     .about_left {
@@ -1211,7 +1238,7 @@ main {
     #home {
         flex-direction: column;
         gap: 24px;
-        padding: 15% 4% 8%;
+        padding: 8% 5% 0%;
     }
 
     .home_left {
@@ -1234,6 +1261,7 @@ main {
     }
 
     .btn button {
+        margin-top:10%;
         padding: 10px 16px;
         font-size: 13px;
         margin-right: 8px;
@@ -1301,7 +1329,7 @@ main {
     }
 
     #projects {
-        padding: 8% 5% 100px;
+        padding: 10% 5% 5%;
     }
 
     .project_grid {
