@@ -548,22 +548,22 @@ main {
     font-size: 26px;
     font-weight: 800;
     color: #ffffff;
+    position:relative;
 
 }
 
-.ring-90 {
-    background: conic-gradient(#c084fc 0deg 324deg,
-            rgba(192, 132, 252, 0.15) 324deg 360deg);
+.ring-100 {
+    background: conic-gradient(#c084fc 0deg 360deg);
 }
 
-.ring-85 {
-    background: conic-gradient(#c084fc 0deg 306deg,
-            rgba(192, 132, 252, 0.15) 306deg 360deg);
+.ring-95 {
+    background: conic-gradient(#c084fc 0deg 342deg,
+            rgba(192, 132, 252, 0.15) 342deg 360deg);
 }
 
-.ring-80 {
-    background: conic-gradient(#c084fc 0deg 288deg,
-            rgba(192, 132, 252, 0.15) 288deg 360deg);
+.ring-95 {
+    background: conic-gradient(#c084fc 0deg 342deg,
+            rgba(192, 132, 252, 0.15) 342deg 360deg);
 }
 
 .ring::before {
@@ -586,42 +586,42 @@ main {
     inherits: false;
 }
 
-.ring-90 {
+.ring-100 {
     background: conic-gradient(#c27aff calc(var(--p) * 1%), rgba(255, 255, 255, 0.07) 0);
-    animation: fill90 linear both;
+    animation: fill100 linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 45%;
 }
 
-.ring-85 {
+.ring-95 {
     background: conic-gradient(#c27aff calc(var(--p) * 1%), rgba(255, 255, 255, 0.07) 0);
-    animation: fill85 linear both;
+    animation: fill95 linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 45%;
 }
 
-.ring-80 {
+.ring-95 {
     background: conic-gradient(#c27aff calc(var(--p) * 1%), rgba(255, 255, 255, 0.07) 0);
-    animation: fill80 linear both;
+    animation: fill95 linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 45%;
 }
 
-@keyframes fill90 {
+@keyframes fill100 {
     to {
-        --p: 90;
+        --p: 100;
     }
 }
 
-@keyframes fill85 {
+@keyframes fill95 {
     to {
-        --p: 85;
+        --p: 95;
     }
 }
 
-@keyframes fill80 {
+@keyframes fill95 {
     to {
-        --p: 80;
+        --p: 95;
     }
 }
 
